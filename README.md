@@ -8,8 +8,7 @@
 # - Select directory of extension folder
 #
 # Purpose:
-# This chrome extension takes user input in the Google search
-# and parses that info to search Spotify(tm) with the relevant key terms.
+# This chrome extension takes user input in the Google search and parses that info to search Spotify(tm) with the relevant key terms.
 #
 # *To use, after installation, use Google search within the Chrome Browser.
 # *After searching, click the SearchTunes icon at the top right of the window.
