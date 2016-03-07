@@ -1,19 +1,26 @@
 {
   "name": "SearchTunes",
-  "version": "1.0",
-  "description": "Plays background music from spotify based on keywords in search query",
+  "version": "1.0.1",
+  "description": "Extension queries Spotify based on search terms and plays a 30 second audio clip of a song",
   
   "browser_action": {
     "default_icon": "icon.png",
     "default_title": "SearchTunes"
   },
+  
+  "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*","https://www.google.com/*"],
+      "js": ["jquery-2.2.1.min.js"]
+    }
+  ],
 
   "permissions": [
     "http://www.google.com/*", "https://www.google.com/*", "tabs"
   ],
 
   "background":{
-    "scripts": ["background.js", "searchTunes.js"],
+    "scripts": ["jquery-2.2.1.min.js", "background.js", "searchTunes.js"],
     "persistent": true
   },
   "manifest_version": 2
